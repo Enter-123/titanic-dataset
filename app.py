@@ -10,7 +10,7 @@ classifier = joblib.load('classifier.joblib')
 st.title('Titanic Dataset Prediction')
 
 pclass = st.selectbox("Passenger Class (Pclass)",[1,2,3])
-gender = st.selectbox("Gender",['male','female'])
+gender = st.selectbox("gender",['male','female'])
 age = st.number_input("Age :",min_value=1,max_value=100,value=28,step=1)
 sibsp = st.number_input("Number of Sibling  : ",min_value=0,max_value=20,value=2,step=1)	
 parch = st.number_input("Number of Parent  : ",min_value=0,max_value=20,value=2,step=1)
